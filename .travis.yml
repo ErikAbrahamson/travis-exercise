@@ -6,8 +6,14 @@ node_js:
   - "0.12"
   - "0.11"
 
-# before_script:
-#   - npm install -g mocha
-
 script:
   - mocha
+
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: "key_name"
+#   app: 'travis-exercise'
+#   on:
+#     branch: master
+#     node: '0.12'
