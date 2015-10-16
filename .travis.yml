@@ -1,19 +1,15 @@
 language: node_js
-
 node_js:
-  - "4.1"
-  - "4.0"
-  - "0.12"
-  - "0.11"
-
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
 script:
-  - mocha
-
+- mocha
 deploy:
   provider: heroku
   api_key:
-    secure: 'test'
-  app: 'travis-exercise'
+    secure: LsneKG7eOXUC6Kfma/N1eqQHjZtfrvkGIt+9+OD4hQZRPjIXfrq7UWobFTxOPKW5e4az5igWA1CK2mJGA+QkS1QoXhG/YogM/h45UQra+dqbs+M/2xYvgEKjjY5rhu/5tff34huDAIUBpyC0HBo1KHLdRPJn2K0t5k788lyoI+5JM6DbsuzbukunBmO4N8iFSKgt0lvso93eqtdirk7hZCBocKtds+l+BGv8k6MeRSoNe8+R6nkCxc0P46iE+Nb36O3K/jEG6Ir9sTqZepxeJIKQUbKJmZz9OT/pzIUmFQf4gNFYxG3ZHAKg3ghC4mMdycCDBR0sJKY3R5fQqLZXk0MVJ77zW6+fPvyN82xYuS6lm03YWntbFvly2NyMiLhpVcc3XArQRVHXOaIrpQoFShks5dq4SgaIeFZzXqOGiBmkHgTroIgp4r4BAj1ZIBxDt2MZdxKMweU8PBQQipbecO3k00Uad8PqawMUo3baEmt/VaEjWBPpyc8r/fuwQafCiQ2EiB9woGXkHZxLIApPQjtKom8JNttnSXRqb6WaSLEGdU6A6atgEOfC7trD8cH1oO/6keLEzxanSOL48s/t+5rIdpwAuGDXIcHoB0BhKIvEpjcqaR7rH8QQtrunu1CeZGlNj+kJODJSRkSLGrk3hmduBVJR7JYnnQC1OyqsLE8=
+  app: polar-harbor-8077
   on:
-    branch: master
-    node: '0.12'
+    repo: ErikAbrahamson/travis-exercise
