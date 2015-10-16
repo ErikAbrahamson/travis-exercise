@@ -9,11 +9,11 @@ node_js:
 script:
   - mocha
 
-# deploy:
-#   provider: heroku
-#   api_key:
-#     secure: "key_name"
-#   app: 'travis-exercise'
-#   on:
-#     branch: master
-#     node: '0.12'
+deploy:
+  provider: heroku
+  api_key:
+    secure: 'test'
+  app: 'travis-exercise'
+  on:
+    branch: master
+    node: '0.12'
