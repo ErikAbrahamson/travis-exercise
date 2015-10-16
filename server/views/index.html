@@ -6,15 +6,6 @@
 {% block content %}
 
   <div id="mocha"></div>
-
-  <script src="../routes/index.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.2.0/chai.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.3.2/mocha.min.js"></script>
-  <script>mocha.setup('bdd')</script>
-  <script src="../routes/index.js"></script>
-  <script src="../../test/test-server.js"></script>
-  <script>
-    mocha.run();
-  </script>
+  <span>{{ title }}</span>
 
 {% endblock %}
